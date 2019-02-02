@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/badminton1"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="RESET!"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:onClick="reset"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designed by Akshay Raichur"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        android:textSize="5sp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team A"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fff"
+                    android:id="@+id/teama"
+                    android:paddingBottom="68dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="25dp"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/walkway"
+                    android:id="@+id/team_a_score"
+                    android:paddingLeft="70dp"
+                    android:textColor="@android:color/background_dark"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/button"
+                    android:onClick="teamAScore"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team B"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/fff"
+                    android:id="@+id/teamb"
+                    android:paddingBottom="68dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="25dp"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/walkway"
+                    android:id="@+id/team_b_score"
+                    android:paddingLeft="70dp"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/button2"
+                    android:onClick="teamBScore"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
